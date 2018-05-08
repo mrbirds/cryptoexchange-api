@@ -1,7 +1,10 @@
 version: '3'
 services:
   api:
-    image: puzanov/cryptoexchange_api
+    #image: puzanov/cryptoexchange_api
+    build:
+      context: .
+      dockerfile: Dockerfile-local
     restart: always
     ports:
-      - '4567:4567'
+      - '4567:4567'        
