@@ -15,18 +15,18 @@ GEM
       http_parser.rb (~> 0.6.0)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
-    http-form_data (2.1.0)
+    http-form_data (2.1.1)
     http_parser.rb (0.6.0)
     lru_redux (1.1.0)
     mustermann (1.0.2)
     public_suffix (3.0.2)
     rack (2.0.5)
-    rack-protection (2.0.1)
+    rack-protection (2.0.3)
       rack
-    sinatra (2.0.1)
+    sinatra (2.0.3)
       mustermann (~> 1.0)
       rack (~> 2.0)
-      rack-protection (= 2.0.1)
+      rack-protection (= 2.0.3)
       tilt (~> 2.0)
     tilt (2.0.8)
     unf (0.1.4)
@@ -41,4 +41,4 @@ DEPENDENCIES
   sinatra
 
 BUNDLED WITH
-   1.16.1
+   1.16.2
