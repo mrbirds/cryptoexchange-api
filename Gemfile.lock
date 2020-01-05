@@ -6,6 +6,7 @@ GEM
     cryptoexchange (0.27.0)
       http (~> 3.0.0)
       lru_redux
+      websocket-eventmachine-client >= 0
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
     http (3.0.0)
