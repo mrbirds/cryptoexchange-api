@@ -24,13 +24,13 @@ get '/ticker' do
     pair = Cryptoexchange::Models::MarketPair.new(base: params[:base], target: params[:target], market: params[:market])
     ticker = client.ticker(pair)
     result['ticker'] << {
-        'last' => ticker.last,
-        'bid' => ticker.bid,
-        'ask' => ticker.ask,
-        'high' => ticker.high,
-        'low' => ticker.low,
-        'change' => ticker.change,
-        'volume' => ticker.volume
+        'last' => ticker.last.to_f,
+        'bid' => ticker.bid.to_f,
+        'ask' => ticker.ask.to_f,
+        'high' => ticker.high.to_f,
+        'low' => ticker.low.to_f,
+        'change' => ticker.change.to_f,
+        'volume' => ticker.volume.to_f
     }
     result.to_json
 end    
